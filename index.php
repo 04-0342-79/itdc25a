@@ -8,583 +8,103 @@
 		<title>Milligram | A minimalist CSS framework.</title>
 		<link rel="icon" href="https://milligram.github.io/images/icon.png">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-		<link rel="stylesheet" href="dist/milligram.min.css"><!-- to generate this style run `$ npm start` -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" href="dist/milligram.min.css">
 		<link rel="stylesheet" href="dist/main.css">
 	</head>
 	<body>
 
 		<main class="wrapper">
 
-			<section class="container" id="image">
-				<img src="https://milligram.github.io/images/thumbnail.png" alt="Milligram | A minimalist CSS framework.">
-			</section>
-
-			<section class="container" id="typography">
-				<h5 class="title">Typography</h5>
-				<hr>
-				<div class="example">
-					<div class="row">
-						<div class="column">
-							<h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 4.6rem (46px)</span></h1>
-							<h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 3.6rem (36px)</span></h2>
-							<h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 2.8rem (28px)</span></h3>
-							<h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 2.2rem (22px)</span></h4>
-							<h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 1.8rem (18px)</span></h5>
-							<h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.6rem (16px)</span></h6>
-						</div>
-						<div class="column">
-							<p>Lorem ipsum dolor sit amet, <u>consectetur adipisicing elit</u>.</p>
-							<p>Obcaecati <s>error</s> a, quas fugit hic, <a href="#">accusantium</a> autem <i>necessitatibus praesentium</i> placeat, iusto et <b>soluta expedita</b>! Quisquam repellendus <small>voluptatem</small>, <mark>tempora iste culpa fuga</mark>, <time>on April 29</time>!</p>
-							<p>Quisquam nobis, ad. Iusto, <strong>repudiandae</strong>. Autem ipsa blanditiis, quae, fugit nobis <em>perspiciatis in beatae vitae</em> numquam illo, architecto hic dolor <q>molestiae aliquid</q>.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container" id="blockquotes">
-				<h5 class="title">Blockquotes</h5>
-				<hr>
-				<div class="example">
-					<div class="row">
-						<div class="column">
-							<p><q>Yeah!! Milligram is amazing.</q></p>
-						</div>
-						<div class="column">
-							<blockquote>
-								<p><em>Yeah!! Milligram is amazing.</em></p>
-							</blockquote>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container" id="buttons">
-				<h5 class="title">Buttons</h5>
-				<hr>
-				<div class="example">
-					<div class="row">
-						<div class="column">
-							<a class="button" href="javascript: void(0)">Default Button</a>
-							<a class="button button-outline" href="javascript: void(0)">Outlined Button</a>
-							<a class="button button-clear" href="javascript: void(0)">Clear Button</a>
-							<a class="button" disabled href="javascript: void(0)">Default Button</a>
-							<a class="button button-outline" disabled href="javascript: void(0)">Outlined Button</a>
-							<a class="button button-clear" disabled href="javascript: void(0)">Clear Button</a>
-						</div>
-						<div class="column">
-							<button class="button">Default Button</button>
-							<button class="button button-outline">Outlined Button</button>
-							<button class="button button-clear">Clear Button</button>
-							<button class="button" disabled>Default Button</button>
-							<button class="button button-outline" disabled>Outlined Button</button>
-							<button class="button button-clear" disabled>Clear Button</button>
-						</div>
-						<div class="column">
-							<input class="button" type="submit" value="Default Button">
-							<input class="button button-outline" type="submit" value="Outlined Button">
-							<input class="button button-clear" type="submit" value="Clear Button">
-							<input class="button" disabled type="submit" value="Default Button">
-							<input class="button button-outline" disabled type="submit" value="Outlined Button">
-							<input class="button button-clear" disabled type="submit" value="Clear Button">
-						</div>
-					</div>
-					<div class="row">
-						<div class="column">
-							<input class="button" type="reset" value="Default Button">
-							<input class="button button-outline" type="reset" value="Outlined Button">
-							<input class="button button-clear" type="reset" value="Clear Button">
-							<input class="button" disabled type="reset" value="Default Button">
-							<input class="button button-outline" disabled type="reset" value="Outlined Button">
-							<input class="button button-clear" disabled type="reset" value="Clear Button">
-						</div>
-						<div class="column">
-							<input class="button" type="button" value="Default Button">
-							<input class="button button-outline" type="button" value="Outlined Button">
-							<input class="button button-clear" type="button" value="Clear Button">
-							<input class="button" disabled type="button" value="Default Button">
-							<input class="button button-outline" disabled type="button" value="Outlined Button">
-							<input class="button button-clear" disabled type="button" value="Clear Button">
-						</div>
-						<div class="column">
-							<div class="button">Default Button</div>
-							<div class="button button-outline">Outlined Button</div>
-							<div class="button button-clear">Clear Button</div>
-							<div class="button" disabled>Default Button</div>
-							<div class="button button-outline" disabled>Outlined Button</div>
-							<div class="button button-clear" disabled>Clear Button</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container" id="lists">
-				<h5 class="title">Lists</h5>
-				<hr>
-				<div class="example">
-					<div class="row">
-						<div class="column">
-							<ul>
-								<li>Unordered list item 1</li>
-								<li>Unordered list item 2</li>
-								<li>Unordered list item 3
-									<ul>
-										<li>Unordered list item 3.1</li>
-										<li>Unordered list item 3.2</li>
-										<li>Unordered list item 3.3</li>
-									</ul>
-								</li>
-								<li>Unordered list item 4</li>
-								<li>Unordered list item 5</li>
-							</ul>
-						</div>
-						<div class="column">
-							<ol>
-								<li>Ordered list item 1</li>
-								<li>Ordered list item 2</li>
-								<li>Ordered list item 3
-									<ol>
-										<li>Ordered list item 3.1</li>
-										<li>Ordered list item 3.2</li>
-										<li>Ordered list item 3.3</li>
-									</ol>
-								</li>
-								<li>Ordered list item 4</li>
-								<li>Ordered list item 5</li>
-							</ol>
-						</div>
-						<div class="column">
-							<dl>
-								<dt>Description list item 1</dt>
-								<dt>Description list item 2</dt>
-								<dt>Description list item 3</dt>
-								<dd>Description list item 3.1</dd>
-								<dd>Description list item 3.2</dd>
-								<dd>Description list item 3.3</dd>
-								<dt>Description list item 4</dt>
-								<dt>Description list item 5</dt>
-							</dl>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container" id="forms">
-				<h5 class="title">Forms</h5>
-				<hr>
-				<div class="example">
-				<form>
-						<fieldset>
-							<legend>Legend</legend>
-							<div class="row">
-								<div class="column">
-									<label for="textField">Text field</label>
-									<input type="text" placeholder="Text field" id="textField">
-									<label for="emailField">Email field</label>
-									<input type="email" id="emailField" placeholder="Email field">
-									<label for="numberField">Number field</label>
-									<input type="number" id="numberField" placeholder="Number field">
-									<label for="passwordField">Password field</label>
-									<input type="password" id="passwordField" placeholder="Password field">
-									<label for="selectField">Select field</label>
-									<select id="selectField">
-										<option value="selectField1">Select field 1</option>
-										<option value="selectField2">Select field 2</option>
-										<option value="selectField3">Select field 3</option>
-										<option value="selectField4">Select field 4</option>
-									</select>
-									<label for="searchField">Search field</label>
-									<input type="search" id="searchField" placeholder="Search field">
-								</div>
-								<div class="column">
-									<label for="telField">Tel field</label>
-									<input type="tel" id="telField" placeholder="Tel field">
-									<label for="urlField">URL field</label>
-									<input type="url" id="urlField" placeholder="URL field">
-									<label for="radioField">Radio field</label>
-									<div class="row">
-										<div class="column">
-											<input type="radio" id="radioField1" name="radioField">
-											<label class="label-inline" for="radioField1">Radio field 1</label>
-										</div>
-										<div class="column">
-											<input type="radio" id="radioField2" name="radioField">
-											<label class="label-inline" for="radioField2">Radio field 2</label>
-										</div>
-									</div>
-									<label for="radioField">Checkbox field</label>
-									<div class="row">
-										<div class="column">
-											<input type="checkbox" id="checkboxField1">
-											<label class="label-inline" for="checkboxField1">Checkbox field 1</label>
-										</div>
-										<div class="column">
-											<input type="checkbox" id="checkboxField2">
-											<label class="label-inline" for="checkboxField2">Checkbox field 2</label>
-										</div>
-									</div>
-									<label for="textareaField">Textarea field</label>
-									<textarea placeholder="Textarea field" id="textareaField"></textarea>
-									<input type="submit">
-									<input type="reset" class="button-clear">
-								</div>
+			<nav class="navigation">
+				<section class="container">
+					<a class="navigation-title" href="https://milligram.github.io/">
+						<svg class="img" version="1.1" viewBox="0 0 463 669">
+							<g transform="translate(0.000000,669.000000) scale(0.100000,-0.100000)">
+								<path d="M2303 6677c-11-13-58-89-393-627-128-206-247-397-265-425-18-27-85-135-150-240-65-104-281-451-480-770-358-575-604-970-641-1032-10-18-45-74-76-126-47-78-106-194-107-212-1-3-11-26-24-53-60-118-132-406-157-623-19-158-8-491 20-649 82-462 291-872 619-1213 192-199 387-340 646-467 335-165 638-235 1020-235 382 0 685 70 1020 235 259 127 454 268 646 467 328 341 537 751 619 1213 28 158 39 491 20 649-25 217-97 505-157 623-13 27-23 50-23 53 0 16-57 127-107 210-32 52-67 110-77 128-37 62-283 457-641 1032-199 319-415 666-480 770-65 105-132 213-150 240-18 28-137 219-265 425-354 570-393 630-400 635-4 3-12-1-17-8zm138-904c118-191 654-1050 1214-1948 148-236 271-440 273-452 2-13 8-23 11-23 14 0 72-99 125-212 92-195 146-384 171-598 116-974-526-1884-1488-2110-868-205-1779 234-2173 1046-253 522-257 1124-10 1659 45 97 108 210 126 225 4 3 9 13 13 22 3 9 126 209 273 445 734 1176 1102 1766 1213 1946 67 108 124 197 126 197 2 0 59-89 126-197zM1080 3228c-75-17-114-67-190-243-91-212-128-368-137-580-34-772 497-1451 1254-1605 77-15 112-18 143-11 155 35 212 213 106 329-32 36-62 48-181 75-223 50-392 140-552 291-115 109-178 192-242 316-101 197-136 355-128 580 3 111 10 167 30 241 30 113 80 237 107 267 11 12 20 26 20 32 0 6 8 22 17 36 26 41 27 99 3 147-54 105-142 149-250 125z"></path>
+							</g>
+						</svg>
+						&nbsp;
+						<h1 class="title">Milligram</h1>
+					</a>
+					<ul class="navigation-list float-right">
+						<li class="navigation-item">
+							<a class="navigation-link" href="#popover-grid" data-popover>Docs</a>
+							<div class="popover" id="popover-grid">
+								<ul class="popover-list">
+									<li class="popover-item"><a class="popover-link" href="#getting-started" title="Getting Started">Getting Started</a></li>
+									<li class="popover-item"><a class="popover-link" href="#typography" title="Typography">Typography</a></li>
+									<li class="popover-item"><a class="popover-link" href="#blockquotes" title="Blockquotes">Blockquotes</a></li>
+									<li class="popover-item"><a class="popover-link" href="#buttons" title="Buttons">Buttons</a></li>
+									<li class="popover-item"><a class="popover-link" href="#lists" title="Lists">Lists</a></li>
+									<li class="popover-item"><a class="popover-link" href="#forms" title="Forms">Forms</a></li>
+									<li class="popover-item"><a class="popover-link" href="#tables" title="Tables">Tables</a></li>
+									<li class="popover-item"><a class="popover-link" href="#grids" title="Grids">Grids</a></li>
+									<li class="popover-item"><a class="popover-link" href="#codes" title="Codes">Codes</a></li>
+									<li class="popover-item"><a class="popover-link" href="#utilities" title="Utilities">Utilities</a></li>
+									<li class="popover-item"><a class="popover-link" href="#tips" title="Tips">Tips</a></li>
+									<li class="popover-item"><a class="popover-link" href="#browser-support" title="Browser Support">Browser Support</a></li>
+									<li class="popover-item"><a class="popover-link" href="#examples" title="Examples">Examples</a></li>
+									<li class="popover-item"><a class="popover-link" href="#contributing" title="Contributing">Contributing</a></li>
+								</ul>
 							</div>
-						</fieldset>
-					</form>
-				</div>
-			</section>
-
-			<section class="container" id="tables">
-				<h5 class="title">Tables</h5>
-				<hr>
-				<div class="example">
-					<table>
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Age</th>
-								<th>Height</th>
-								<th>Location</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Kevin Durant</td>
-								<td>27</td>
-								<td>2.06</td>
-								<td> Washington, DC</td>
-							</tr>
-							<tr>
-								<td>Stephen Curry</td>
-								<td>27</td>
-								<td>1,91</td>
-								<td>Akron, OH</td>
-							</tr>
-							<tr>
-								<td>Klay Thompson</td>
-								<td>25</td>
-								<td>2,01</td>
-								<td>Los Angeles, CA</td>
-							</tr>
-							<tr>
-								<td>Draymond Green</td>
-								<td>26</td>
-								<td>2,01</td>
-								<td>Saginaw, MI</td>
-							</tr>
-							<tr>
-								<td>Andre Iguodala</td>
-								<td>32</td>
-								<td>1,98</td>
-								<td>Springfield, IL</td>
-							</tr>
-							<tr>
-								<td>Anderson Varejão</td>
-								<td>33</td>
-								<td>2,08</td>
-								<td>Colatina, ES</td>
-							</tr>
-							<tr>
-								<td>Shaun Livingston</td>
-								<td>30</td>
-								<td>2,01</td>
-								<td>Peoria, CA</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
-
-			<section class="container" id="grids">
-				<h5 class="title">Grids</h5>
-				<hr>
-				<div class="example">
-					<div class="row">
-						<div class="column"><span class="column-demo">100%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-10"><span class="column-demo">10%</span></div>
-						<div class="column column-90"><span class="column-demo">90%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-20"><span class="column-demo">20%</span></div>
-						<div class="column column-80"><span class="column-demo">80%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25"><span class="column-demo">25%</span></div>
-						<div class="column column-75"><span class="column-demo">75%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-33"><span class="column-demo">33%</span></div>
-						<div class="column column-67"><span class="column-demo">67%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-40"><span class="column-demo">40%</span></div>
-						<div class="column column-60"><span class="column-demo">60%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-50"><span class="column-demo">50%</span></div>
-						<div class="column column-50"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-60"><span class="column-demo">60%</span></div>
-						<div class="column column-40"><span class="column-demo">40%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-67"><span class="column-demo">67%</span></div>
-						<div class="column column-33"><span class="column-demo">33%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-75"><span class="column-demo">75%</span></div>
-						<div class="column column-25"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-80"><span class="column-demo">80%</span></div>
-						<div class="column column-20"><span class="column-demo">20%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-90"><span class="column-demo">90%</span></div>
-						<div class="column column-10"><span class="column-demo">10%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">100%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-90"><span class="column-demo">90%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-80"><span class="column-demo">80%</span></div>
-						<div class="column"><span class="column-demo">20%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-75"><span class="column-demo">75%</span></div>
-						<div class="column"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-67"><span class="column-demo">67%</span></div>
-						<div class="column"><span class="column-demo">33%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-60"><span class="column-demo">60%</span></div>
-						<div class="column"><span class="column-demo">40%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-50"><span class="column-demo">50%</span></div>
-						<div class="column"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-40"><span class="column-demo">40%</span></div>
-						<div class="column"><span class="column-demo">60%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-33"><span class="column-demo">33%</span></div>
-						<div class="column"><span class="column-demo">67%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25"><span class="column-demo">25%</span></div>
-						<div class="column"><span class="column-demo">75%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-20"><span class="column-demo">20%</span></div>
-						<div class="column"><span class="column-demo">80%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-10"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">90%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">100%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">50%</span></div>
-						<div class="column"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">33.3%</span></div>
-						<div class="column"><span class="column-demo">33.3%</span></div>
-						<div class="column"><span class="column-demo">33.3%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">25%</span></div>
-						<div class="column"><span class="column-demo">25%</span></div>
-						<div class="column"><span class="column-demo">25%</span></div>
-						<div class="column"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">20%</span></div>
-						<div class="column"><span class="column-demo">20%</span></div>
-						<div class="column"><span class="column-demo">20%</span></div>
-						<div class="column"><span class="column-demo">20%</span></div>
-						<div class="column"><span class="column-demo">20%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">16.6%</span></div>
-						<div class="column"><span class="column-demo">16.6%</span></div>
-						<div class="column"><span class="column-demo">16.6%</span></div>
-						<div class="column"><span class="column-demo">16.6%</span></div>
-						<div class="column"><span class="column-demo">16.6%</span></div>
-						<div class="column"><span class="column-demo">16.6%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-						<div class="column"><span class="column-demo">14.28%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-						<div class="column"><span class="column-demo">12.5%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-						<div class="column"><span class="column-demo">11.11%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-						<div class="column"><span class="column-demo">10%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-						<div class="column"><span class="column-demo">9.09%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-						<div class="column"><span class="column-demo">8.3%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-50 column-offset-25"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-50 column-offset-50"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25 column-offset-75"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25 column-offset-50"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
-						<div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25"><span class="column-demo">25%</span></div>
-						<div class="column column-25 column-offset-50"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column"><span class="column-demo">25%</span></div>
-						<div class="column column-50 column-offset-25"><span class="column-demo">50%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-50"><span class="column-demo">50%</span></div>
-						<div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-25"><span class="column-demo">25%</span></div>
-						<div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
-					</div>
-					<div class="row">
-						<div class="column column-75 column-offset-25"><span class="column-demo">75%</span></div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container" id="codes">
-				<h5 class="title">Codes</h5>
-				<hr>
-				<div class="example">
-<pre><code>.milligram {
-	color: #9b4dca;
-}</code></pre>
-				</div>
-			</section>
-
-			<section class="container" id="utilities">
-				<h5 class="title">Utilities</h5>
-				<hr>
-				<div class="example">
-					<div class="clearfix">
-						<img class="float-left" src="http://placehold.it/320/d1d1d1/?text=float+to+left" alt="float to left">
-						<img class="float-right" src="http://placehold.it/320/d1d1d1/?text=float+to+right" alt="float to right">
-					</div>
-				</div>
-			</section>
+						</li>
+						<li class="navigation-item">
+							<a class="navigation-link" href="#popover-support" data-popover>Support</a>
+							<div class="popover" id="popover-support">
+								<ul class="popover-list">
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram" title="On Github">On Github</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://codepen.io/milligramcss" title="On Codepen">On Codepen</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://facebook.com/milligramcss" title="On Facebook">On Facebook</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://twitter.com/milligramcss" title="On Twitter">On Twitter</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram/issues/new" title="Need help?">Need help?</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram#license" title="License">License</a></li>
+									<li class="popover-item"><a class="popover-link" target="blank" href="https://github.com/milligram/milligram/releases" title="Versions">Versions</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<a href="https://github.com/milligram/milligram" title="Milligram on Github" target="_blank">
+						<svg class="octocat" viewBox="0 0 250 250"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path class="octocat-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"></path><path class="octocat-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"></path></svg>
+					</a>
+				</section>
+			</nav>
 
 			<section class="container" id="examples">
 				<h5 class="title">Examples</h5>
-				<hr>
+				<p>You can view more examples of using Milligram.</p>
 				<p>
 					<ul>
-						<li><a href="https://milligram.github.io/getting-started.html" title="Getting Started">Getting Started</a></li>
-						<li><a href="https://milligram.github.io/typography.html" title="Typography">Typography</a></li>
-						<li><a href="https://milligram.github.io/blockquotes.html" title="Blockquotes">Blockquotes</a></li>
-						<li><a href="https://milligram.github.io/buttons.html" title="Buttons">Buttons</a></li>
-						<li><a href="https://milligram.github.io/lists.html" title="Lists">Lists</a></li>
-						<li><a href="https://milligram.github.io/forms.html" title="Forms">Forms</a></li>
-						<li><a href="https://milligram.github.io/tables.html" title="Tables">Tables</a></li>
-						<li><a href="https://milligram.github.io/grids.html" title="Grids">Grids</a></li>
-						<li><a href="https://milligram.github.io/codes.html" title="Codes">Codes</a></li>
-						<li><a href="https://milligram.github.io/utilities.html" title="Utilities">Utilities</a></li>
-						<li><a href="https://milligram.github.io/tips.html" title="Tips">Tips</a></li>
-						<li><a href="https://milligram.github.io/browser-support.html" title="Browser Support">Browser Support</a></li>
+						<li><a href="https://milligram.github.io/#getting-started" title="Getting Started">Getting Started</a></li>
+						<li><a href="https://milligram.github.io/#typography" title="Typography">Typography</a></li>
+						<li><a href="https://milligram.github.io/#blockquotes" title="Blockquotes">Blockquotes</a></li>
+						<li><a href="https://milligram.github.io/#buttons" title="Buttons">Buttons</a></li>
+						<li><a href="https://milligram.github.io/#lists" title="Lists">Lists</a></li>
+						<li><a href="https://milligram.github.io/#forms" title="Forms">Forms</a></li>
+						<li><a href="https://milligram.github.io/#tables" title="Tables">Tables</a></li>
+						<li><a href="https://milligram.github.io/#grids" title="Grids">Grids</a></li>
+						<li><a href="https://milligram.github.io/#codes" title="Codes">Codes</a></li>
+						<li><a href="https://milligram.github.io/#utilities" title="Utilities">Utilities</a></li>
+						<li><a href="https://milligram.github.io/#tips" title="Tips">Tips</a></li>
+						<li><a href="https://milligram.github.io/#browser-support" title="Browser Support">Browser Support</a></li>
 					</ul>
 				</p>
 			</section>
 
+			<section class="container" id="contributing">
+				<h5 class="title">Contributing</h5>
+				<p>Want to contribute? Follow these <a href="https://github.com/milligram/milligram/blob/master/.github/contributing.md" title="Contributing">recommendations</a>.</p>
+			</section>
+
 			<footer class="footer">
 				<section class="container">
-					<p>Designed with ♥ by <a target="blank" href="http://cjpatoilo.com" title="CJ Patoilo">CJ Patoilo</a>. Licensed under the <a target="blank" href="https://github.com/milligram/milligram#license" title="MIT License">MIT License</a>.</p>
+					<p>Designed with ♥ by <a target="_blank" href="http://cjpatoilo.com" title="CJ Patoilo">CJ Patoilo</a>. Licensed under the <a target="_blank" href="https://github.com/milligram/milligram#license" title="MIT License">MIT License</a>.</p>
 				</section>
 			</footer>
 
 		</main>
+
+		<script src="dist/main.js"></script>
 
 	</body>
 </html>
